@@ -40,7 +40,6 @@ def I_articulated(px,py,pz):
     theta_2=m.atan2(m.sqrt(r_square),pz-A_l1)-m.atan2(A_l3*s,A_l2+A_l3*c)
     return m.degrees(theta_1),m.degrees(theta_2),m.degrees(theta_3)
 
-
 p0,p1,p2,p3,p4=F_articulated(0,0,0)
 print(p0,p1,p2,p3,p4)
 theta_1,theta_2,theta_3=I_articulated(p4[0],p4[1],p4[2])
